@@ -212,12 +212,12 @@ body {
     background:
         linear-gradient(
             180deg,
-            rgba(120, 230, 255, 0.34) 0%,
-            rgba(25, 150, 230, 0.24) 45%,
-            rgba(5, 45, 120, 0.42) 100%
+            rgba(107, 228, 255, 0.34) 0%,
+            rgba(105, 195, 252, 0.24) 45%,
+            rgba(93, 146, 245, 0.42) 100%
         ) !important;
 
-    border: 1px solid rgba(80, 230, 255, 0.85) !important;
+    border: 1px solid rgba(54, 248, 255, 0.85) !important;
     border-radius: 8px !important;
 
     box-shadow:
@@ -227,7 +227,7 @@ body {
         0 0 16px rgba(0, 110, 255, 0.22) !important;
 
     text-shadow:
-        0 0 4px rgba(255, 255, 255, 0.45),
+        0 0 4px rgb(255, 255, 255),
         0 0 8px rgba(0, 220, 255, 0.55) !important;
 
     backdrop-filter: blur(6px);
