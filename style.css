@@ -194,6 +194,97 @@ body {
     left: 54px !important;
     right: 10px !important;
 }
+
+.bukumimpi__select,
+.bukumimpi__input,
+.changepasswordpage__input,
+.registerpage__input,
+.resetpasswordpage__input,
+.banktransfer__input,
+.ewallet__input,
+.qris__input,
+.virtualaccount__input,
+.withdrawpage__input,
+.header-before__input,
+.gamelistpage__search-input {
+    color: #eaffff !important;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(120, 230, 255, 0.34) 0%,
+            rgba(25, 150, 230, 0.24) 45%,
+            rgba(5, 45, 120, 0.42) 100%
+        ) !important;
+
+    border: 1px solid rgba(80, 230, 255, 0.85) !important;
+    border-radius: 8px !important;
+
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.38),
+        inset 0 -8px 16px rgba(0, 20, 60, 0.35),
+        0 0 8px rgba(0, 210, 255, 0.35),
+        0 0 16px rgba(0, 110, 255, 0.22) !important;
+
+    text-shadow:
+        0 0 4px rgba(255, 255, 255, 0.45),
+        0 0 8px rgba(0, 220, 255, 0.55) !important;
+
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+
+    outline: none !important;
+}
+
+/* Placeholder biar ikut glossy putih biru */
+.bukumimpi__select::placeholder,
+.bukumimpi__input::placeholder,
+.changepasswordpage__input::placeholder,
+.registerpage__input::placeholder,
+.resetpasswordpage__input::placeholder,
+.banktransfer__input::placeholder,
+.ewallet__input::placeholder,
+.qris__input::placeholder,
+.virtualaccount__input::placeholder,
+.withdrawpage__input::placeholder,
+.header-before__input::placeholder,
+.gamelistpage__search-input::placeholder {
+    color: rgba(235, 255, 255, 0.82) !important;
+    text-shadow:
+        0 0 4px rgba(255, 255, 255, 0.35),
+        0 0 8px rgba(0, 220, 255, 0.45) !important;
+}
+
+/* Saat diklik / focus */
+.bukumimpi__select:focus,
+.bukumimpi__input:focus,
+.changepasswordpage__input:focus,
+.registerpage__input:focus,
+.resetpasswordpage__input:focus,
+.banktransfer__input:focus,
+.ewallet__input:focus,
+.qris__input:focus,
+.virtualaccount__input:focus,
+.withdrawpage__input:focus,
+.header-before__input:focus,
+.gamelistpage__search-input:focus {
+    background:
+        linear-gradient(
+            180deg,
+            rgba(160, 245, 255, 0.42) 0%,
+            rgba(35, 170, 255, 0.32) 45%,
+            rgba(5, 60, 150, 0.52) 100%
+        ) !important;
+
+    border-color: #8af7ff !important;
+
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.48),
+        inset 0 -8px 16px rgba(0, 20, 60, 0.35),
+        0 0 10px rgba(0, 240, 255, 0.65),
+        0 0 22px rgba(0, 120, 255, 0.42) !important;
+}
+
 .box-middle {
     padding: 0;
     border: 2px groove #dbaf4c;
