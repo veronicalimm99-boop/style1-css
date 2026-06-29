@@ -13,18 +13,152 @@ body {
     background: linear-gradient(to bottom, #05143d 0%, #05143d 100%);
 }
 .beforesidebar__menu-item {
-    color: #ffffff;
-    padding: 8px 0;
-    border-bottom: 1px solid #00a2ff;
-    font-size: 16px;
-    padding-left: 10px;
-    background: linear-gradient(to bottom, #05143d 0%, #05143d 100%);
-    border-right: 6px solid #00a2ff;
-    border-left: 4px solid #00a2ff;
-    border-top: 1px solid #00a2ff !important;
+    position: relative !important;
+    overflow: hidden !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    gap: calc(var(--spacing) * 2.5) !important;
+    width: 100% !important;
+
+    color: #ffffff !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    line-height: 20px !important;
+
+    padding: 10px 12px !important;
+    margin-bottom: 6px !important;
+
     border-radius: 35px !important;
-    line-height: 20px;
-    margin-bottom: 5px !important;
+    border-top: 1px solid rgba(95, 230, 255, 0.95) !important;
+    border-bottom: 1px solid rgba(0, 120, 255, 0.9) !important;
+    border-left: 4px solid #00eaff !important;
+    border-right: 6px solid #008cff !important;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(65, 225, 255, 0.38) 0%,
+            rgba(0, 82, 175, 0.95) 38%,
+            rgba(2, 18, 70, 1) 70%,
+            rgba(0, 8, 38, 1) 100%
+        ) !important;
+
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.45),
+        inset 0 -10px 18px rgba(0, 0, 0, 0.42),
+        0 0 8px rgba(0, 234, 255, 0.42),
+        0 0 18px rgba(0, 120, 255, 0.34) !important;
+
+    text-shadow:
+        0 1px 2px rgba(0, 0, 0, 0.95),
+        0 0 8px rgba(0, 234, 255, 0.72) !important;
+
+    z-index: 2 !important;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        background 0.25s ease,
+        border-color 0.25s ease !important;
+}
+
+/* Efek glossy kaca bagian atas */
+.beforesidebar__menu-item::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 10px;
+    right: 10px;
+    height: 42%;
+    border-radius: 35px 35px 14px 14px;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(255, 255, 255, 0.46) 0%,
+            rgba(255, 255, 255, 0.18) 48%,
+            rgba(255, 255, 255, 0.02) 100%
+        );
+
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Efek cahaya jalan */
+.beforesidebar__menu-item::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 46%;
+    height: 100%;
+
+    background:
+        linear-gradient(
+            120deg,
+            transparent 0%,
+            rgba(255, 255, 255, 0.12) 35%,
+            rgba(255, 255, 255, 0.55) 50%,
+            rgba(0, 255, 255, 0.42) 60%,
+            transparent 100%
+        );
+
+    transform: skewX(-24deg);
+    animation: glossyBlueMove 3.4s ease-in-out infinite;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Biar icon dan text tetap di atas efek glossy */
+.beforesidebar__menu-item > * {
+    position: relative;
+    z-index: 2;
+}
+
+.beforesidebar__menu-item:hover {
+    transform: translateX(4px);
+
+    border-left-color: #7af7ff !important;
+    border-right-color: #00f0ff !important;
+    border-top-color: rgba(160, 250, 255, 1) !important;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(120, 245, 255, 0.5) 0%,
+            rgba(0, 130, 255, 0.98) 42%,
+            rgba(0, 45, 135, 1) 72%,
+            rgba(0, 10, 55, 1) 100%
+        ) !important;
+
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.55),
+        inset 0 -10px 20px rgba(0, 0, 0, 0.45),
+        0 0 12px rgba(0, 240, 255, 0.8),
+        0 0 26px rgba(0, 130, 255, 0.58),
+        0 0 38px rgba(0, 65, 255, 0.35) !important;
+}
+
+@keyframes glossyBlueMove {
+    0% {
+        left: -75%;
+        opacity: 0;
+    }
+
+    18% {
+        opacity: 1;
+    }
+
+    55% {
+        opacity: 0.9;
+    }
+
+    100% {
+        left: 130%;
+        opacity: 0;
+    }
 }
 .box-middle {
     padding: 0;
@@ -293,3 +427,5 @@ body {
          font-size: 16px;
      }
  }
+
+
