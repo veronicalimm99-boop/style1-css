@@ -629,3 +629,28 @@ body {
      }
  }
 
+/* INPUT LOGIN DESKTOP: BACKGROUND PUTIH, TEKS HITAM */
+@media screen and (min-width: 769px) {
+    .header-before__input {
+        background: #ffffff !important;
+        color: #000000 !important;
+        -webkit-text-fill-color: #000000 !important;
+        caret-color: #000000 !important;
+        text-shadow: none !important;
+    }
+
+    .header-before__input::placeholder {
+        color: #777777 !important;
+        -webkit-text-fill-color: #777777 !important;
+        opacity: 1 !important;
+        text-shadow: none !important;
+    }
+
+    .header-before__input:focus {
+        background: #ffffff !important;
+        color: #000000 !important;
+        -webkit-text-fill-color: #000000 !important;
+        caret-color: #000000 !important;
+        text-shadow: none !important;
+    }
+}
