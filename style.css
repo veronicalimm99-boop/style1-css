@@ -1,7 +1,7 @@
 body {
     background: #000000 url(https://imgstorage.site/view/plotwis/dptoto-bg-3000x1688.jpg) center center no-repeat !important;
     background-attachment: fixed !important;
-    background-position: top;
+    background-position: center 65px !important;
     background-size: cover !important;
 }
 .header-before {
