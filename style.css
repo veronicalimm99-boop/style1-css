@@ -13,7 +13,7 @@ body {
     background: linear-gradient(to bottom, #05143d 0%, #05143d 100%);
 }
 .depositpage__method {
-    background-color: rgba(29, 138, 231, 1);
+    background-color: rgba(29, 138, 231, 1) !important;
 }
 .beforesidebar__menu-item {
     position: relative !important;
