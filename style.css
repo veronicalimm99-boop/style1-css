@@ -15,6 +15,14 @@ body {
 .depositpage__method {
     background-color: rgba(29, 138, 231, 1) !important;
 }
+.depositpage__method--active {
+    border: 3px solid var(--border-active) !important;
+    border-radius: 12px !important;
+    box-shadow:
+        0 0 0 1px rgba(255, 255, 255, 0.18),
+        0 0 10px rgba(255, 215, 0, 0.65),
+        inset 0 0 8px rgba(255, 255, 255, 0.10) !important;
+}
 .beforesidebar__menu-item {
     position: relative !important;
     overflow: hidden !important;
