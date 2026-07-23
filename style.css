@@ -12,6 +12,9 @@ body {
 .categorylist__item, .beforesidebar__menu-overlay {
     background: linear-gradient(to bottom, #05143d 0%, #05143d 100%);
 }
+.depositpage__method {
+    background-color: rgba(29, 138, 231, 1);
+}
 .beforesidebar__menu-item {
     position: relative !important;
     overflow: hidden !important;
